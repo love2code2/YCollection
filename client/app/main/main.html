@@ -1,0 +1,139 @@
+<section id="content">
+            
+<div class="box-site-head">
+    <div class="box-bg has-tablet">
+        <a href="/sites/kawano"><img width="417" height="299" src="assets/images/banner1.jpg" data-src="assets/images/banner1.jpg" alt="KAWANO" class"lazy" ></a>
+    </div>
+    <div class="box-photo has-mobile">
+        <a href="http://www.kawanoshinjuku.com/" target="_blank">
+            <img src="https://assets.awwwards.com/bundles/tvweb/images/nophoto.png" data-src="assets/images/banner1.jpg"  alt="KAWANO" class="lazy" />
+            <div class="ribbon ribbon-sotd"></div>
+        </a>
+    </div>
+    <div class="box-content">
+        <a href="/sites/kawano" class="site-link"></a>
+        <div class="inner vertical-center">
+            <div class="box-info">
+                <div class="row">
+                    <h2 class="heading-large"><a href="/sites/kawano">KAWANO</a></h2>
+                </div>
+                <div class="row">
+                    <div class="by">
+                        By <strong><a href="/shunsuke.iseki.7/">baqemono.inc.</a></strong> from <strong>Japan</strong> with <strong>7.01</strong>
+                    </div>
+                </div>                   
+            </div>
+         <div class="box-breadcrumb">
+                <div class="box-left">
+                    <strong>Site of the Day</strong> <span class="has-desktop">/</span> <span class="text-x-thin">Feb 03, 2017</span>
+                </div>
+                <div class="box-right" id="sotd_collected"></div>
+        </div>
+        <div class="box-bl">
+                <a href="/sites/kawano" class="bt-type1">See case</a>
+                <a href="http://www.kawanoshinjuku.com/" class="bt-type1" target="_blank">Visit website</a>
+         </div>  
+        </div>          
+     </div>   
+</div>
+
+<div class="inner">
+    <div class="box-heading">
+        <div class="box-left">
+            <h2 class="title">Latest Nominees</h2><span>We need your vote!</span>
+        </div>
+        <div class="box-right">
+            <ul class="menu-tabs">
+                <li class="active">
+                    <div class="menu-item featured">
+                        Featured
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item recent">
+                        Recent
+                    </div>
+                </li>
+            </ul>
+        </div>      
+    </div>
+    <div class="grid" id="items-row">
+       <ul class="list-items list-flex list-one-row last-nominees" >
+            <li class="col-3" ng-repeat="product in products">
+                <div class="box-item">
+                    <figure class="rollover site">
+                        <a href="/sites/m-o-n-o">
+                            <img width="417" height="299" src="https://assets.awwwards.com/bundles/tvweb/images/nophoto.png" alt="M O N O" data-src="http://assets.awwwards.com/awards/submissions/2017/01/5890bc300228b.jpg" class="lazy"/>
+                            <span class="img-crop">
+                                 <img width="417" height="299" src="{{product.imageUrl}}" alt="{{product.title}}" >
+                            </span>
+                        </a>
+                        <div class="hover-item top left">
+                            <div class="time-left">
+                                <div class="row">
+                                    <strong>03</strong>
+                                    <span>DAYS</span>
+                                </div>
+                                <div class="row">
+                                    <strong>21</strong>
+                                    <span>HOURS</span>
+                                </div>
+                                <div class="row">
+                                    <strong>14</strong>
+                                    <span>MIN.</span>
+                                </div>
+                            </div>
+                          </div>
+                            <div class="hover-item center">
+                                <a ui-sref="viewProduct({id: product._id})" class="vote-now">VIEW NOW!</a>
+                            </div>
+                            <div class="hover-item top">
+                                <span class="bt-item bt-facebook popup" data-link="http://www.facebook.com/sharer.php?u=http://www.awwwards.com/sites/m-o-n-o&amp;t=M O N O">
+                                    <svg class="ico-svg" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="assets/images/sprite-icons.svg#fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                            </span>
+                                <span class="bt-item bt-twitter popup" data-link="http://twitter.com/share?text=M O N O&amp;url=http://www.awwwards.com/sites/m-o-n-o">
+                                    <svg class="ico-svg" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="assets/images/sprite-icons.svg#twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+
+                                </span>
+                                <span class="bt-item bt-googleplus popup" data-link="https://plus.google.com/share?url=http://www.awwwards.com/sites/m-o-n-o">
+                                    <svg class="ico-svg" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="assets/images/sprite-icons.svg#gplus" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="hover-item bottom">
+                                <a class="bt-item bt-link" href="http://mono.acervo.io" target="_blank">
+                                        <svg class="ico-svg" viewbox="0 0 22.24 14" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="assets/images/sprite-icons.svg#ACart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                </a>
+                            </div>
+                    </figure>
+                    <div class="box-info">
+                            <div class="content">
+                                <div class="row">
+                                    <h3><a ui-sref="viewProduct({id: product._id})" class="">{{product.title}}</a></h3>
+                                </div>
+                                <div class="row">                                        
+                                    By <strong><a href="/giuliandrimba/">Acervo</a></strong> from Brazil
+                                </div>
+                                <div class="row">January 31, 2017 in
+                                    <strong><a href="/nominees/" class="text-black">Nominees</a></strong>
+                                </div>
+                            </div>
+                        <div class="footer footer-border">
+                        </div>
+                    </div>
+                </div>
+            </li> 
+        </ul>     
+        <a href="/nominees/" class="button button-loadmore style3" id="filters-offset">
+                <span>Load More</span>
+        </a>  
+    </div>
+</div>
+</section>

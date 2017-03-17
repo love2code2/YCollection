@@ -1,0 +1,167 @@
+<div  ng-controller="NavbarCtrl">
+  <nav class="nav-main" id="nav-main">
+        <div class="top">
+            <div class="header">
+                <div class="pull-left">
+                    <span class="link-1 js-nav-menu">ENGLISH</span>
+                </div>
+                <div class="pull-right">
+                    <div class="bt-close js-nav-main" ng-click="toggleClass('remove')">CLOSE</div>
+                </div>
+            </div>
+            <ul class="menu active" data-menu-name="BACK" id="menu-main">
+                <li class="active"><a href="/" class="item">Home</a></li>
+                <li class="dropdown">
+                    <span class="item" ng-click="ShowHideColManu()">Yogis Collection</span>
+                    <ul ng-show="IsColVisible">
+                        <li><a href="/awards-of-the-day/" class="item">Mala Beads</a></li>
+                        <li><a href="/awards-of-the-month/" class="item">Bracelets</a></li>
+                        <li><a href="/awards-of-the-year/" class="item">Stones</a></li>
+                        <li><a href="/developer/" class="item">Candles</a></li>
+                        <li><a href="/honorable-mentions/" class="item">Accessories</a></li>         
+                    </ul>                
+                </li>
+                <li><a href="/nominees/" class="item">Look Book</a></li>
+                <li><a href="/collections/" class="item">Become a Yogi</a></li>
+                <li class="directory"><a href="/directory/" class="item" data-count="4">Blog</a></li>            
+                <li class="dropdown">
+                    <span class="item" ng-click="ShowHideAbManu()">About Us</span>
+                    <i></i>
+                    <ul ng-show="IsAbVisible">
+                        <li><a href="/about-us/" class="item">About Us</a></li>
+                        <li><a href="/developer/" class="item">Developer Award</a></li>
+                                            <li><a href="/jury/2016/" class="item">Jury 2016</a></li>
+                        <li><a href="/about-evaluation/" class="item">Evaluation System</a></li>
+                        <li><a href="/about-status/" class="item">Status System</a></li>
+                        <li><a href="/about-certificates/" class="item">Awards / Certificates / Books</a></li>
+                    </ul>
+                </li>           
+            </ul>
+            <ul class="menu" data-menu-name="BACK" data-menu-id="menu-main" id="menu-lang">
+                <li class="active">
+                    <a href="#" class="item">
+                        English
+                        <span class="bt-check active">
+                            <span class="bt-content"></span>
+                        </span>
+                    </a>
+                </li>
+                <li><span class="item">Español - Spanish <span class="soon">Soon!</span></span></li>
+                <li><span class="item">Português - Portuguese <span class="soon">Soon!</span></span></li>
+                <li><span class="item">Français - French <span class="soon">Soon!</span></span></li>
+                <li><span class="item">日本の - Japanese <span class="soon">Soon!</span></span></li>
+                <li><span class="item">中國 - Chinese <span class="soon">Soon!</span></span></li>
+            </ul>
+        </div>
+        <div class="box-bottom">
+            <div class="box-version">
+                <span>Activate black option</span>
+                <div class="input-check-toggle check-small ">
+                    <input id="version-color" type="checkbox" class="js-dark">
+                    <label for="version-color">
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header">
+        <div class="box-left">
+            <div class="item bt-menu js-nav-main"  ng-click="toggleClass('addleft')">
+                <svg class="ico-svg ico-13 ico-rendering" viewbox="0 0 15 13" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="../assets/images/sprite-icons.svg#menu-main" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                </svg>
+                <span>MENU</span>
+            </div>
+        </div>
+        <div class="box-right">
+            <div class="item bt-search js-search">
+                <svg class="ico-svg" viewbox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="../assets//bundles/tvweb/images/sprite-icons.svg#search" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                </svg>
+                <span class="text">SEARCH FOR INSPIRATION</span>
+            </div>
+                <div class="item login">Are you member?  <strong><a class="open_login" href="/login">Register / log in</a></strong>
+                </div>
+                <div class="item" id="bt-submit" change-class-on-scroll offset="500" scroll-class="gotop" ng-click="toggleClass('addright')" >
+                    <a href="/submit/" class="button button-large">
+                        <span>SHOPPING BASKET!</span>
+                    </a>
+                    <div class="bt-gotop">
+                      <svg class="ico-svg" viewbox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="../assets/images/sprite-icons.svg#cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                      </svg>                 
+                    </div>               
+                  </div>
+                </div>
+          <div class="logo-header">
+              <a href="/">
+                <svg
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                    width="300px"
+                    height="50px"
+                    viewBox="0 0 300 50"
+                    version="1.1"
+                    id="SVGRoot"
+                    inkscape:version="0.92.0 r15299"
+                    sodipodi:docname="logo.svg">
+                    <sodipodi:namedview
+                        id="base"
+                        pagecolor="#ffffff"
+                        bordercolor="#ffffff"
+                        borderopacity="0"
+                        inkscape:pageopacity="0.0"
+                        inkscape:pageshadow="2"
+                        inkscape:zoom="1.7066667"
+                        inkscape:cx="150"
+                        inkscape:cy="40"
+                        inkscape:document-units="px"
+                        inkscape:current-layer="layer1"
+                        showgrid="false"
+                        inkscape:window-width="1920"
+                        inkscape:window-height="1017"
+                        inkscape:window-x="-8"
+                        inkscape:window-y="-8"
+                        inkscape:window-maximized="1" />
+                    <defs
+                        id="defs4149" />
+                    <metadata
+                        id="metadata4152">
+                        <rdf:RDF>
+                        <cc:Work
+                            rdf:about="">
+                            <dc:format>image/svg+xml</dc:format>
+                            <dc:type
+                            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                            <dc:title></dc:title>
+                        </cc:Work>
+                        </rdf:RDF>
+                    </metadata>
+                    <g
+                        id="layer1"
+                        inkscape:groupmode="layer"
+                        inkscape:label="Layer 1">
+                        <text
+                        xml:space="preserve"
+                        style="font-style:normal;font-weight:normal;font-size:24px;line-height:20px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+                        x="50.546875"
+                        y="20.09375"
+                        id="text4167"><tspan
+                            sodipodi:role="line"
+                            id="tspan4165"
+                            x="50.546875"
+                            y="20.09375"
+                            style="-inkscape-font-specification:'Lucida Calligraphy';font-family:'Lucida Calligraphy';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Namaste, Yogis!</tspan></text>
+                    </g>
+                    </svg>
+              </a>
+          </div>
+    </header>
+</div>
