@@ -1,6 +1,4 @@
-<navbar></navbar>
-
-<div class="container">
+<!--<div class="container">
   <div class="row">
     <div class="col-lg-12">
       <div class="thumbnail productbox">
@@ -26,5 +24,102 @@
     </div>
   </div>
 </div>
+-->
+<section id="content">
+<div class="block pt-0">
+    <div class="box-site2-head">
+        <div class="inner">
+            <div class="box-breadcrumb">
+                <div class="box-left">
+                    <span><a href="/nominees/">Mala Beads</a> /</span>
+                    <strong>{{product.title}}</strong>                    
+                </div>
+                <div class="box-right" id="subs_collected"></div>
+            </div>
+        </div>
+        <div class="inner width-3">
+            <div class="box-screenshot">
+                <figure class="rollover">
+                    <a href="http://en.vogue.me/" class="item-link" target="_blank"></a>
+                    <img src="{{product.imageUrl}}" width="918" height="656" alt="Vogue Arabia" />
+                             <div class="ribbon ribbon-hm"></div>
+                                                            <div class="hover-item top">
+                            <span class="bt-item bt-facebook popup" data-link="http://www.facebook.com/sharer.php?u=http://www.awwwards.com/sites/vogue-arabia&amp;t=Vogue Arabia">
+                                <svg class="ico-svg" viewbox="0 0 6.5 14" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="/bundles/tvweb/images/sprite-icons.svg#facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
 
-<footer></footer>
+                            </span>
+                            <span class="bt-item bt-twitter popup" data-link="http://twitter.com/share?text=Vogue Arabia&amp;url=http://www.awwwards.com/sites/vogue-arabia">
+                                <svg class="ico-svg" viewbox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="/bundles/tvweb/images/sprite-icons.svg#twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+
+                            </span>
+                            <span class="bt-item bt-googleplus popup" data-link="https://plus.google.com/share?url=http://www.awwwards.com/sites/vogue-arabia">
+                                <svg class="ico-svg" viewbox="0 0 21 14" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="/bundles/tvweb/images/sprite-icons.svg#googleplus" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+
+                            </span>
+                        </div>
+                        <div class="hover-item bottom">
+                            <a class="bt-item bt-link" href="http://en.vogue.me/" target="_blank">
+                                <svg class="ico-svg" viewbox="0 0 22.24 14" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="/bundles/tvweb/images/sprite-icons.svg#link" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                    </svg>
+
+                            </a>
+                        </div>
+
+                </figure>
+            <div class="clear"></div>
+               
+        </div>
+
+            <div class="box-block site-details">
+                <div class="title">
+                    <div class="box-left">
+                        <h1 class="heading-medium">{{product.title}}</h1>
+                    </div>
+                    <div class="box-right">
+                        <div class="time">
+                              <div class="item">
+                                    <strong>Qty</strong> 
+                                </div>
+                                <div class="item">
+                                    <span class="quantity"> <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"  />                                   
+                                    </span>
+                                </div>
+                                <div class="item">
+                                  <ngcart-addtocart id="{{product._id}}" name="{{product.title}}" price="{{product.price}}" template-url="components/ngcart/addtocart.html" data="product">ADD TO CART!</ngcart-addtocart>                                   
+                                </div>
+                        </div>
+                    </div>
+                </div>              
+                <div class="read-more">
+                    {{product.description}}
+                </div>
+                
+            </div>
+
+            <div class="box-page-votation">
+                <div class="box-information">
+                    <div class="header">
+                        <div class="box-left">
+                            <strong class="title">REVIEWS</strong>
+                             68 REVIEW
+                        </div>
+                        <div class="box-right">
+                            <div class="tooltip">
+                                <a href="/about-evaluation/" class="bt-info"></a>
+                                <div class="box-tooltip">
+                                    <div class="tooltip-text">More Info</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+             </div>
+    </div>
+</section>

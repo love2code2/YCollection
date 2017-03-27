@@ -85,13 +85,17 @@
                 <div class="item login">Are you member?  <strong><a class="open_login" href="/login">Register / log in</a></strong>
                 </div>
                 <div class="item" id="bt-submit" change-class-on-scroll offset="500" scroll-class="gotop" ng-click="toggleClass('addright')" >
-                    <a href="/submit/" class="button button-large">
-                        <span>SHOPPING BASKET!</span>
-                    </a>
+                    <a ui-sref="checkout" class="button button-large">
+                         <ngcart-summary template-url="components/ngcart/summary.html" ></ngcart-summary>
+                    </a>                    
                     <div class="bt-gotop">
+                        <a ui-sref="checkout">
                       <svg class="ico-svg" viewbox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="../assets/images/sprite-icons.svg#cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                      </svg>                 
+                        
+                            <use xlink:href="../assets/images/sprite-icons.svg#cart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                          
+                      </svg>             
+                      </a>    
                     </div>               
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meanshopApp')
+angular.module('yogisCollectionApp')
   .factory('Catalog', function ($resource) {
     return $resource('/api/catalogs/:id');
   });

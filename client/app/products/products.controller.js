@@ -62,6 +62,9 @@ angular.module('yogisCollectionApp')
   .controller('ProductCheckoutCtrl',
     function($scope, $http, $state, ngCart){
     $scope.errors = '';
+    
+    ngCart.setTaxRate(7.5);
+    ngCart.setShipping(2.99);    
 
     $scope.paymentOptions = {
       onPaymentMethodReceived: function(payload) {
